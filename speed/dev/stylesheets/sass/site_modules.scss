@@ -5,6 +5,7 @@ body{
    color: white;
 }
 
+
 // ***************************************************************
 // misc
 // ***************************************************************
@@ -19,20 +20,54 @@ body{
 // ***************************************************************
 // header
 // ***************************************************************
-header{
-   width: 220px;
-   height: 650px;
-   background: $mainbg;
+.header-wrap{
    float: left;
 }
+
+header.home-wrap{
+   width: 220px;
+   min-height: 100vh;
+   background: $mainbg;
+   padding: 50px 0;
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   border: 1px solid $main-highlight;
+   top:0px;
+   left: 0px;
+   bottom: 0px
+}
 @media (max-width: 768px){
-   header{
+   header.home-wrap{
       width: 100%;
       float: none;
-      display: block;
+      display: none;
    }
    .site-branding{
       display: none;
+   }
+}
+
+.logo-cont{
+   width: 100%;
+   height: 80px;
+   background-image: url(../img/ig-logo-v2.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+}
+
+.social-cont{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 0 30px;
+   a{
+      img{
+         width: 36px;
+         height: 36px;
+      }
    }
 }
 
@@ -46,6 +81,20 @@ header{
 // ***************************************************************
 // content area
 // ***************************************************************
+
+div#content.site-content{
+   padding: 0 0 0 220px;
+   min-height: 100vh;
+}
+@media (max-width: 768px){
+   div#content.site-content{
+      padding: 0px;
+   }
+}
+
+div#primary.content-area{
+}
+
 .entry-header{
    background: $mainbg;
    height: auto;

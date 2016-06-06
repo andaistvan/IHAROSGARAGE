@@ -19,41 +19,42 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+   <!-- <div class="header-wrap"> -->
 
-      <header class="home-wrap">
 
-            <div class="site-branding">
-      			<?php
-                  if (is_front_page() && is_home()) : ?>
-      				<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-               <?php else : ?>
-      				<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+   <header class="home-wrap">
+      <div class="site-branding">
+         <a href="<?php echo esc_url(home_url('/'));  ?>" rel="home">
+            <div class="logo-cont"></div>
+         </a>
+		</div><!-- .site-branding -->
 
-      			<?php
-                  endif; ?>
-      		</div><!-- .site-branding -->
+            <!-- .site-navigation -->
+         <?php
+         echo'
 
-                  <!-- .site-navigation -->
-               <?php
-               echo'
-
-               <div class="vert-nav-cont">
-                  <div class="vertical dropdown menu">';
-                       wp_nav_menu(array(
-                           'container' => false,
-                           'menu' => __('left vertical menu', 'speed'),
-                           'menu_class' => 'vertical dropdown menu',
-                           'theme_location' => 'vert-nav-cont',
-                           'items_wrap' => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
-                           //Recommend setting this to false, but if you need a fallback...
-                           'fallback_cb' => 'f6_vertical_menu_fallback',
-                           'walker' => new F6_VERTICAL_MENU_WALKER(),
-                       ));
-                   echo'
-                  </div>
-               </div>'; ?><!-- .site-navigation -->
-
-      </header>
+         <div class="vert-nav-cont">
+            <div class="vertical dropdown menu">';
+                 wp_nav_menu(array(
+                     'container' => false,
+                     'menu' => __('left vertical menu', 'speed'),
+                     'menu_class' => 'vertical dropdown menu',
+                     'theme_location' => 'vert-nav-cont',
+                     'items_wrap' => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+                     //Recommend setting this to false, but if you need a fallback...
+                     'fallback_cb' => 'f6_vertical_menu_fallback',
+                     'walker' => new F6_VERTICAL_MENU_WALKER(),
+                 ));
+             echo'
+            </div>
+         </div>'; ?><!-- .site-navigation -->
+         <div class="social-wrap">
+            <div class="social-cont">
+               <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/icon-facebook.svg" alt="facebook icon" /></a>
+               <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/icon-instagram.svg" alt="instagram icon" /></a>
+               <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/icon-youtube.svg" alt="youtube icon" /></a>
+            </div>
+         </div>
+   </header>
 
 	<div id="content" class="site-content">
-      <div class="row">

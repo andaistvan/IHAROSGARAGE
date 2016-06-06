@@ -28,6 +28,7 @@ ul#menu-main-menu{
             border-bottom: 1px solid #262626;
             a{
                font-size: 16px;
+               color: white;
             }
             a:hover{
 
@@ -99,7 +100,7 @@ ul#menu-main-menu{
 }
 .shiftnav.shiftnav-skin-custom ul.shiftnav-menu li.menu-item.shiftnav-highlight > .shiftnav-target,
 .shiftnav.shiftnav-skin-custom ul.shiftnav-menu li.menu-item ul.sub-menu .shiftnav-highlight > .shiftnav-target {
-  color: $main-highlight;
+  color: white;
   background: transparent;
 }
 .shiftnav.shiftnav-skin-custom ul.shiftnav-menu li.menu-item.shiftnav-active > .shiftnav-target,

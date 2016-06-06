@@ -2123,7 +2123,8 @@ ul#menu-main-menu {
       ul#menu-main-menu li ul li {
         border-bottom: 1px solid #262626; }
         ul#menu-main-menu li ul li a {
-          font-size: 16px; }
+          font-size: 16px;
+          color: white; }
   ul#menu-main-menu li:last-child {
     border: none; }
   ul#menu-main-menu li.current-menu-item a {
@@ -2176,7 +2177,7 @@ ul#menu-main-menu {
 
 .shiftnav.shiftnav-skin-custom ul.shiftnav-menu li.menu-item.shiftnav-highlight > .shiftnav-target,
 .shiftnav.shiftnav-skin-custom ul.shiftnav-menu li.menu-item ul.sub-menu .shiftnav-highlight > .shiftnav-target {
-  color: #F5A623;
+  color: white;
   background: transparent; }
 
 .shiftnav.shiftnav-skin-custom ul.shiftnav-menu li.menu-item.shiftnav-active > .shiftnav-target,
@@ -2248,23 +2249,78 @@ body {
 .clear {
   clear: both; }
 
-header {
-  width: 220px;
-  height: 650px;
-  background: #262626;
+.header-wrap {
   float: left; }
 
+header.home-wrap {
+  width: 220px;
+  min-height: 100vh;
+  background: #262626;
+  padding: 50px 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #F5A623;
+  top: 0px;
+  left: 0px;
+  bottom: 0px; }
+
 @media (max-width: 768px) {
-  header {
+  header.home-wrap {
     width: 100%;
     float: none;
-    display: block; }
+    display: none; }
 
   .site-branding {
     display: none; } }
+.logo-cont {
+  width: 100%;
+  height: 80px;
+  background-image: url(../img/ig-logo-v2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.social-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 30px; }
+  .social-cont a img {
+    width: 36px;
+    height: 36px; }
+
 .site-footer {
   display: none; }
 
+div#content.site-content {
+  padding: 0 0 0 220px;
+  min-height: 100vh; }
+
+@media (max-width: 768px) {
+  div#content.site-content {
+    padding: 0px; } }
 .entry-header {
   background: #262626;
   height: auto; }

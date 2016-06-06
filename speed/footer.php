@@ -9,7 +9,6 @@
 ?>
 
 	</div><!-- #content -->
-</div><!-- row - main cont -->
 	<footer id="colophon" class="site-footer row" role="contentinfo">
       <div class="small-12 columns">
          <div class="site-info">

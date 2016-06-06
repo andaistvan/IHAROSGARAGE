@@ -13,7 +13,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-         <div class="large-8 large-centered columns padding20">
+
    			<?php
                while (have_posts()) : the_post();
 
@@ -26,7 +26,6 @@ get_header(); ?>
 
                endwhile; // End of the loop.
                ?>
-         </div><!-- large-12 columns -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
