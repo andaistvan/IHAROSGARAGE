@@ -50,6 +50,11 @@ function speed_setup()
         'topbar-menu' => esc_html__('Top Bar Menu', 'speed'),
     ));
 
+    // foundation VERTICAL navigation
+    register_nav_menus(array(
+        'vert-nav-cont' => esc_html__('left vertical menu', 'speed'),
+    ));
+
     /*
      * Switch default core markup for search form, comment form, and comments
      * to output valid HTML5.
