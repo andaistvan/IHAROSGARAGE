@@ -41,7 +41,7 @@
                   <div class="vertical dropdown menu">';
                        wp_nav_menu(array(
                            'container' => false,
-                           'menu' => __('Top Bar Menu', 'speed'),
+                           'menu' => __('left vertical menu', 'speed'),
                            'menu_class' => 'vertical dropdown menu',
                            'theme_location' => 'vert-nav-cont',
                            'items_wrap' => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',

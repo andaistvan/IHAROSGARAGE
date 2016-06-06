@@ -20,26 +20,27 @@ body{
 // header
 // ***************************************************************
 header{
-   width: 200px;
+   width: 220px;
    height: 650px;
-   background: white;
+   background: $mainbg;
    float: left;
 }
-
+@media (max-width: 768px){
+   header{
+      width: 100%;
+      float: none;
+      display: block;
+   }
+   .site-branding{
+      display: none;
+   }
+}
 
 // ***************************************************************
 // footer
 // ***************************************************************
 .site-footer{
-   background: white;
-   margin-bottom: 20px;
-   background: #e6e6e6;
-   padding: 50px 0;
-   .site-info{
-      display: table;
-      margin-left: auto;
-      margin-right: auto;
-   }
+   display: none;
 }
 
 // ***************************************************************
@@ -47,4 +48,5 @@ header{
 // ***************************************************************
 .entry-header{
    background: $mainbg;
+   height: auto;
 }
