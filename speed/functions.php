@@ -163,6 +163,9 @@ function speed_scripts()
 }
 add_action('wp_enqueue_scripts', 'speed_scripts');
 
+// adding editor style
+add_editor_style('dev/main.css');
+
 /**
  * Implement the Custom Header feature.
  */

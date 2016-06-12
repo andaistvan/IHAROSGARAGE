@@ -2093,6 +2093,13 @@ custom styles
 /*--------------------------------------------------------------
 # typography
 --------------------------------------------------------------*/
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 35px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
 p {
   font-family: 'Merriweather', serif;
   font-size: 16px;
@@ -2107,7 +2114,7 @@ ul#menu-main-menu {
     border-bottom: 1px solid #979797; }
     ul#menu-main-menu li a {
       font-family: 'Merriweather', serif;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: normal;
       line-height: 1.5;
       text-transform: uppercase;
@@ -2124,7 +2131,7 @@ ul#menu-main-menu {
       ul#menu-main-menu li ul li {
         border-bottom: 1px solid #262626; }
         ul#menu-main-menu li ul li a {
-          font-size: 16px;
+          font-size: 15px;
           color: white; }
   ul#menu-main-menu li:last-child {
     border: none; }
@@ -2323,9 +2330,6 @@ div#content.site-content {
 @media (max-width: 768px) {
   div#content.site-content {
     padding: 0px; } }
-.entry-header {
-  height: auto; }
-
 /*--------------------------------------------------------------
 # widgets
 --------------------------------------------------------------*/
@@ -2376,6 +2380,21 @@ h2#registration {
 /*--------------------------------------------------------------
 # pages
 --------------------------------------------------------------*/
+.entry-header {
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .entry-header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.42); }
+
 .entry-content {
   background: rgba(38, 38, 38, 0.9);
   max-width: 800px;
@@ -2383,6 +2402,10 @@ h2#registration {
   padding: 20px;
   margin-top: 30px;
   margin-bottom: 30px; }
+  .entry-content ul {
+    color: #F5A623; }
+    .entry-content ul li span {
+      color: #F5A623; }
 
 .rolunk-bg {
   width: 100%;
@@ -2392,3 +2415,64 @@ h2#registration {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: scroll; }
+
+.kapcsolat-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/kapcsolat-bg.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: scroll; }
+
+.kapcsolat-col {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 300;
+  padding: 60px 40px 0 40px;
+  position: relative; }
+  .kapcsolat-col h1 {
+    color: #262626;
+    font-weight: bold;
+    margin: 0 0 15px 0; }
+  .kapcsolat-col p {
+    color: #262626;
+    font-size: 35px;
+    margin-bottom: 0px; }
+  .kapcsolat-col a {
+    color: #262626;
+    font-size: 35px; }
+  .kapcsolat-col a:hover {
+    color: #F5A623; }
+  .kapcsolat-col .ninja-form-container {
+    max-width: 400px;
+    margin-top: 40px; }
+
+.ninja-forms-form-wrap {
+  font-size: 12px;
+  font-family: 'Merriweather', serif; }
+  .ninja-forms-form-wrap .ninja-forms-required-items {
+    color: #262626;
+    font-size: 14px;
+    margin: 0 0 10px 0; }
+
+input#ninja_forms_field_5.ninja-forms-field.ninja-forms-req,
+input#ninja_forms_field_7.ninja-forms-field.ninja-forms-req,
+input#ninja_forms_field_8 {
+  color: #262626; }
+
+textarea#ninja_forms_field_9.ninja-forms-field {
+  color: #262626; }
+
+/*submit button*/
+input#ninja_forms_field_6.ninja-forms-field {
+  font-family: 'Merriweather', serif;
+  background: #F5A623;
+  font-size: 15px;
+  color: #262626;
+  letter-spacing: 0.44px;
+  line-height: 15px;
+  font-weight: bold;
+  box-shadow: none;
+  padding: 8px !important;
+  border: none; }

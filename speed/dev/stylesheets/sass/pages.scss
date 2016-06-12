@@ -1,12 +1,37 @@
-.entry-content{
-   background: rgba(38,38,38,0.90);
+.entry-header{
+   height: auto;
    max-width: 800px;
-   // width: 85%;
    margin: 0 auto;
    padding: 20px;
    margin-top: 30px;
    margin-bottom: 30px;
+   h1{
+      font-family: 'Merriweather', serif;
+      font-size: 35px;
+      font-weight: normal;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.42);
+   }
+}
 
+
+
+.entry-content{
+   background: rgba(38,38,38,0.90);
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   ul{
+      color: $main-highlight;
+      li{
+         span{
+            color: $main-highlight;
+         }
+      }
+   }
 }
 
 // ***************************************************************
@@ -20,4 +45,94 @@
    background-repeat: no-repeat;
    background-size: cover;
    overflow: scroll;
+}
+
+// ***************************************************************
+// KAPCSOLAT
+// ***************************************************************
+.kapcsolat-bg{
+   width: 100%;
+   height: 100vh;
+   background-image: url(../img/kapcsolat-bg.jpg);
+   background-position: left center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: scroll;
+}
+
+.kapcsolat-col{
+   font-size: 30px;
+   line-height: 1.2;
+   font-weight: 300;
+   padding: 60px 40px 0 40px;
+   position: relative;
+   h1{
+      color:$mainbg;
+      font-weight: bold;
+      margin: 0 0 15px 0;
+   }
+   p{
+      color: $mainbg;
+      font-size: 35px;
+      margin-bottom: 0px;
+   }
+   a{
+      color: $mainbg;
+      font-size: 35px;
+   }
+   a:hover{
+      color: $main-highlight;
+   }
+   .ninja-form-container{
+      max-width: 400px;
+      margin-top: 40px;
+   }
+}
+
+.ninja-forms-form-wrap{
+   font-size: 12px;
+   font-family: 'Merriweather', serif;
+   .ninja-forms-required-items{
+      color: $mainbg;
+      font-size: 14px;
+      margin: 0 0 10px 0;
+   }
+}
+
+
+// labels
+// label#ninja_forms_field_5_label,
+// label#ninja_forms_field_7_label,
+// label#ninja_forms_field_8_label,
+// label#ninja_forms_field_9_label{
+//    div#inner-editor{
+//       color: red !important;
+//    }
+// }
+
+// fields
+input#ninja_forms_field_5.ninja-forms-field.ninja-forms-req,
+input#ninja_forms_field_7.ninja-forms-field.ninja-forms-req,
+input#ninja_forms_field_8{
+      color: $mainbg;
+
+}
+
+// textarea
+textarea#ninja_forms_field_9.ninja-forms-field{
+   color: $mainbg;
+}
+
+/*submit button*/
+input#ninja_forms_field_6.ninja-forms-field{
+   font-family: 'Merriweather', serif;
+   background: $main-highlight;
+   font-size: 15px;
+   color: $mainbg;
+   letter-spacing: 0.44px;
+   line-height: 15px;
+   font-weight: bold;
+   box-shadow: none;
+   padding: 8px !important;
+   border: none;
 }
