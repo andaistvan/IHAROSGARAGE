@@ -2109,6 +2109,7 @@ ul#menu-main-menu {
       font-family: 'Merriweather', serif;
       font-size: 18px;
       font-weight: normal;
+      line-height: 1.5;
       text-transform: uppercase;
       color: #ededed;
       padding: 15px 0 12px 0; }
@@ -2377,10 +2378,8 @@ h2#registration {
 --------------------------------------------------------------*/
 .entry-content {
   background: rgba(38, 38, 38, 0.9);
-  max-width: 600px;
-  width: 85%;
-  margin-right: 10%;
-  float: right;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
   margin-top: 30px;
   margin-bottom: 30px; }
